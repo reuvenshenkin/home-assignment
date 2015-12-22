@@ -1,0 +1,10 @@
+<ion-content class="padding">
+	  <p>Questions list:</p>
+	  <ion-list>
+			<ion-item class="item-avatar" ng-repeat="item in questions">
+				
+				<h2>{{item.title}} {{item.question.description}}</h2>
+				<p>{{item.question.author}} </p>
+			</ion-item>
+		</ion-list>
+</ion-content>

@@ -1,0 +1,11 @@
+<h1>Questions</h1>
+<ul>
+    {% for question in object_list %}
+    <li>{{ question.title }}  :  
+    <a href="{% url "question_edit" question.id %}">{{ question.description }}</a>
+    <a href="{% url "question_delete" question.id %}">delete</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url "question_new" %}">New</a>
